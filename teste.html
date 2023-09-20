@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos CSS para a página */
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            font-size: 24px;
+        }
+
+        .svg-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .right {
+            color: #aaa;
+            text-decoration: line-through
+        }
+
+
+        .wrong {
+            color: #ff4136
+        }
+
+        .wrong span {
+            visibility: visible;
+            text-decoration: none;
+
+        }
+
+        .right span {
+            visibility: visible;
+            text-decoration: none;
+        }
+
+        .right span {
+            visibility: visible;
+            text-decoration: none;
+            display: inline - block;
+            content: "";
+            vertical-align: -0.125em;
+            background-repeat: no-repeat;
+            height: 1em;
+            width: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Ícone SVG -->
+        <img class="svg-icon" src="download (1).svg" alt="Ícone SVG">
+
+        <!-- Texto com classes que podem ser alteradas para mudar a cor -->
+        <p class="wrong">Texto Vermelho</p>
+    </div>
+    <div class="container">
+        <!-- Ícone SVG -->
+        <img class="svg-icon" src="download.svg" alt="Ícone SVG">
+
+        <!-- Texto com classes que podem ser alteradas para mudar a cor -->
+        <p class="right">Texto riscado</p>
+    </div>
+
+    <!-- Botões para alterar a cor do texto -->
+    <button onclick="alterarCor('red-text', 'red')">Cor Vermelha</button>
+    <button onclick="alterarCor('blue-text', 'blue')">Cor Azul</button>
+
+    <script>
+        // Função para alterar a classe do texto para mudar a cor
+        function alterarCor(elementClass, novaCor) {
+            const elementosTexto = document.querySelectorAll('.' + elementClass);
+            elementosTexto.forEach(function (elemento) {
+                elemento.style.color = novaCor;
+            });
+        }
+    </script>
+</body>
+
+</html>

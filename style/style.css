@@ -1,0 +1,332 @@
+body {
+    background: rgba(170, 247, 134, 0.11);
+
+}
+
+.contat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.titleEo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    /* Espaço entre o título/imagem e o texto */
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.titleEo h1 {
+    margin: 0;
+    /* Remove margens padrão do h1 */
+}
+
+.textoIntro {
+    font-size: 23px;
+    width: 63%;
+    text-align: left;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.container-game {
+    width: 100%;
+    background: rgba(180, 243, 151, 0.11);
+
+}
+
+.column_name {
+    margin-top: 20px;
+    width: 10%;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.column_name ul li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.container-columns {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+}
+
+#root {
+    align-items: right;
+    text-align: center;
+
+}
+
+.column {
+    font-size: 22px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.column ul li {
+    padding: 4px;
+    list-style-type: none;
+    max-width: 100%;
+
+}
+
+.column .options {
+    width: 180px;
+    margin-left: -80px;
+    font-size: 25px;
+}
+
+.nulo {
+    width: 180px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+    padding: 4px;
+}
+
+.house1 {
+    width: 180px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+    padding: 4px;
+}
+
+.house2 {
+    width: 180px;
+    padding: 4px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+}
+
+.house3 {
+    width: 180px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+    padding: 4px;
+}
+
+.house4 {
+    width: 180px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+    padding: 4px;
+}
+
+.house5 {
+    width: 180px;
+    background-color: rgb(194, 194, 194);
+    /* Cor de fundo padrão */
+    padding: 4px;
+}
+
+.house.Amarela {
+    background-color: yellow;
+    width: 180px;
+    padding: 4px;
+}
+
+.house.Azul {
+    background-color: blue;
+    width: 180px;
+    padding: 4px;
+}
+
+.house.Branca {
+    background-color: white;
+    width: 180px;
+    padding: 4px;
+}
+
+.house.Verde {
+    background-color: green;
+    width: 180px;
+    padding: 4px;
+}
+
+.house.Vermelha {
+    background-color: red;
+    width: 180px;
+    padding: 4px;
+}
+
+select {
+    width: 100%;
+    outline: 1px solid -webkit-focus-ring-color;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+
+.title {
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 25px;
+}
+
+.clues {
+    display: flex;
+    text-align: justify;
+    margin-bottom: .5rem;
+    flex-direction: row;
+    width: 65%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+
+}
+
+.result {
+    margin-left: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+
+#clues1 {
+    flex: 1;
+    width: 50%;
+    border-bottom: 1px solid #ddd;
+    margin-right: 10px;
+    
+    /* Ajuste o valor conforme necessário */
+}
+
+
+
+.clues ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.clues ul li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .125rem
+}
+
+.clues ul li span {
+    display: inline-block;
+    width: 16px;
+    margin-right: 5px;
+    visibility: hidden;
+}
+
+.container-button {
+
+    text-align: center;
+    padding: 10 5px
+}
+
+.right {
+    color: #aaa;
+    text-decoration: line-through
+}
+
+
+/* Estilos para o texto */
+
+
+/* Estilos para a classe "right" */
+.right {
+    background-image: url("img/download.svg");
+    /* Imagem de fundo para a classe "right" */
+    background-size: 18px 18px;
+    /* Tamanho da imagem */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem */
+    background-position: left center;
+    /* Posição da imagem à esquerda do texto */
+    padding-left: 30px;
+    /* Espaçamento à esquerda para acomodar o ícone */
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+/* Estilos para a classe "wrong" */
+.wrong {
+    background-image: url("img/download (1).svg");
+    /* Imagem de fundo para a classe "wrong" */
+    background-size: 18px 18px;
+    /* Tamanho da imagem */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem */
+    background-position: left center;
+    /* Posição da imagem à esquerda do texto */
+    padding-left: 30px;
+    /* Espaçamento à esquerda para acomodar o ícone */
+    color: #ff4136;
+}
+
+
+
+
+.title {
+    font-weight: bold;
+}
+
+button {
+    gap: 7px;
+    margin-top: 15px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+
+}
+
+.disable {
+    opacity: 0.5;
+}
+
+.botaoVoltar {
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    padding: 5px 6px 5px 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.botaoIr {
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    padding: 5px 6px 5px 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.botaoIr:hover {
+    background-color: #0056b3;
+}
+
+/* Efeito quando o mouse passa por cima */
+.botaoVoltar:hover {
+    background-color: #0056b3;
+}
+
+.container-columns .column span.title-xs {
+    display: none;
+}
